@@ -378,15 +378,15 @@
 			},5)
 			positionArr[index].top += vSpace + divList.eq(i).outerHeight();
 		}
-		//查找数组中高度最小值的下标
-		function getMinIndex(){
-			var index = 0;
-			for(var i = 0; i < colNum; i ++){
-				if(positionArr[index].top > positionArr[i].top){
-					index = i;
-				}
+	}
+	//查找数组中高度最小值的下标
+	function getMinIndex(){
+		var index = 0;
+		for(var i = 0; i < colNum; i ++){
+			if(positionArr[index].top > positionArr[i].top){
+				index = i;
 			}
-			return index;
 		}
+		return index;
 	}
 </script>
